@@ -1,0 +1,23 @@
+.nav
+  display: flex
+  align-items: center
+  line-height: 24px
+  &__logo
+    display: block
+    width: 269px
+    height: 55px
+    margin-right: 135px
+  &__link
+    display: block
+    padding-left: 35px
+    margin: 0 0 0 auto
+    @include section-bg("transparent", "../img/icons/call-calling.svg", "no-repeat", "left center", "24px 24px" )
+    @include links
+
+.menu
+  display: flex
+  justify-content: space-between
+  list-style: none
+  width: 450px
+  &__link
+    @include links

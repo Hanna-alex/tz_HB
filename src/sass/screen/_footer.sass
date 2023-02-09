@@ -1,0 +1,16 @@
+.footer
+  padding: 10px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    display: block
+    width: 269px
+    height: 55px
+
+  &__social-group
+    @include social-group
+    .social-group__link
+      @include social-links('#000')
+      @include links

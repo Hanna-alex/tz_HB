@@ -1,4 +1,22 @@
 <header class="header">
-  <div class="header__wrapper"></div>
-  <!-- /.header__wrapper -->
+  <div class="container">
+    <div class="header__wrapper">
+      @@include('../bem-blocks/_nav.html',{ class: "header__nav" })
+      <div class="header__headlines">
+        <h2 class="header__subtitle">OPEN EVERYDAY 6AM - 9PM</h2>
+        <h1 class="header__title">
+          A bad day with lunch is better than a good day without it.
+        </h1>
+      </div>
+      <!-- /.header__headlines -->
+      <div class="header__action-group action-group">
+        <button class="header__btn">Reserve a table</button>
+        @@include('../bem-blocks/_social-group.html', { class:
+        "action-group__social-group", })
+      </div>
+      <!-- /.header__action-group -->
+    </div>
+    <!-- /.header__wrapper -->
+  </div>
+  <!-- /.container -->
 </header>

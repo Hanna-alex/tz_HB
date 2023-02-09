@@ -1,0 +1,54 @@
+.lunchmenu
+  padding: 80px 0 62px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    min-height: 638px
+  &__text-group
+    width: 469px
+  &__img-group
+    width: 57%
+  &__title
+    font-weight: 600
+    font-size: 24px
+    line-height: 32px
+    margin-bottom: 10px
+
+.list
+  padding-bottom: 20px
+  margin-bottom: 19px
+  display: flex
+  list-style: none
+  border-bottom: 1px solid #E7E7E7
+
+  &__item
+    font-size: 18px
+    line-height: 32px
+  &__dots-group
+    width: 39px
+    margin: 0 12px 0 12px
+    @include section-bg("transparent", "../img/icons/three-dots.svg","no-repeat","center center", "39px 5px" )
+.img-group
+  position: relative
+  &__photo
+    position: absolute
+    width: 323px
+    height: 486px
+    &_right
+      top: 0
+      right: 0
+      @include section-bg("#fff", "../img/lunchmenu-img-right.jpg", )
+
+    &_left
+      left: 0
+      bottom: 0
+      @include section-bg("#fff", "../img/lunchmenu-img-left.jpg", )
+
+  &__border
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -54%)
+    width: 471px
+    height: 502px
+    border: 2px solid #D3B47F
