@@ -1,2 +1,58 @@
 .reviews
-  padding: 0
+  padding: 219px 0 192px 0
+  background: #3A4574
+  color: #fff
+  &__wrapper
+    position: relative
+  &__swiper
+    position: relative
+    width: 785px
+    min-height: 343px
+    max-height: auto
+    padding-top: 92px
+    margin: auto
+    &::before
+      content: ''
+      display: block
+      width: 83px
+      height: 58px
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      @include section-bg("transparent", "../img/icons/quotes.svg","no-repeat", "center center","contain" )
+
+  &__item
+    text-align: center
+  &__title
+    font-weight: 600
+    font-size: 36px
+    line-height: 40px
+    color: #D3B47F
+    margin-bottom: 20px
+  &__text
+    font-size: 16px
+    line-height: 40px
+    margin-bottom: 30px
+  &__auther
+    font-size: 24px
+    line-height: 40px
+    text-transform: uppercase
+    color: #D3B47F
+    letter-spacing: 0.245em
+  &__btn
+    position: absolute
+    top: 50%
+    transform: translateY(-60%)
+    width: 65px
+    height: 70px
+    stroke: #fff
+    cursor: pointer
+    padding: 10px 0
+    outline: none
+    &:hover
+      stroke: #D3B47F
+    &_prev
+      left: 0
+    &_next
+      right: 0

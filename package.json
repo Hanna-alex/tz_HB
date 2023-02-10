@@ -25,5 +25,8 @@
     "imagemin-pngquant": "^9.0.2",
     "require-dir": "^1.2.0",
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "swiper": "^9.0.3"
   }
 }

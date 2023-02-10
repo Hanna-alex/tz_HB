@@ -9,16 +9,21 @@ exports.ttf = tasks.ttf;
 exports.ttf2 = tasks.ttf2;
 
 exports.build_js = tasks.build_js;
+exports.libs_js = tasks.libs_js;
 exports.dev_js = tasks.dev_js;
 
 exports.fonts = tasks.fonts;
 
+exports.libs_style = tasks.libs_style;
 exports.style = tasks.style;
 exports.rastr = tasks.rastr;
 // exports.webp = tasks.webp;
 exports.watch = tasks.watch;
 
 exports.default = gulp.parallel(
+
+  exports.libs_style,
+  exports.libs_js,
 
   exports.ttf,
   exports.ttf2,
