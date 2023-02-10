@@ -15,6 +15,61 @@
         "action-group__social-group", })
       </div>
       <!-- /.header__action-group -->
+      <div class="header__modal modal">
+        <div class="modal__overlay">
+          <div class="modal__content">
+            <button class="modal__close-btn">
+              <img src="img/icons/close.svg" alt="close button" />
+            </button>
+            <h3 class="modal__title">Reserve a table</h3>
+
+            <form action="#" class="modal__form reserve-form">
+              <div class="reserve-form__wrapper">
+                <label for="name" class="reserve-form__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Input your name"
+                  class="reserve-form__input"
+                />
+              </div>
+              <!-- /.reserve-form__wrapper -->
+              <!-- <div class="reserve-form__wrapper">
+                <label for="phone" class="reserve-form__label">Phone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Input your phone number"
+                  class="reserve-form__input"
+                />
+              </div> -->
+              <!-- /.reserve-form__wrapper -->
+              <div class="reserve-form__wrapper">
+                <label for="mail" class="reserve-form__label">Email</label>
+                <input
+                  type="text"
+                  id="mail"
+                  placeholder="Input your e-mail"
+                  class="reserve-form__input"
+                />
+              </div>
+              <!-- /.reserve-form__wrapper -->
+
+              <textarea
+                id="message"
+                cols="10"
+                rows="10"
+                placeholder="Input your message"
+                class="reserve-form__text"
+              ></textarea>
+              <button type="submit" class="reserve-form__btn">Send</button>
+            </form>
+          </div>
+          <!-- /.madal__content -->
+        </div>
+        <!-- /.modal__overly -->
+      </div>
+      <!-- /.header__modal -->
     </div>
     <!-- /.header__wrapper -->
   </div>
