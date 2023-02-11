@@ -17,7 +17,11 @@ function submitHandler(e) {
   for (var key of data.keys())
     console.log(key, data.get(key));
 
+
   request.send(data);
+
+  document.querySelectorAll("form").forEach(form =>
+    form.reset())
 }
 
 document.querySelectorAll("form").forEach(form =>
