@@ -11,20 +11,38 @@
     justify-content: center
     &_one
       grid-column: 1/ 6
+      grid-row: 1/2
+    &_two
+      grid-column: 8/ -1
+      grid-row: 2/3
+    &_three
+      grid-column: 1/ 6
+      grid-row: 3/4
   &__title
     font-weight: 700
     font-size: 40px
     line-height: 88px
     margin-bottom: 20px
     &::after
+      position: relative
       content: ""
       display: block
       width: 108px
       height: 2px
       background: #D3B47F
       margin-left: -54px
+      z-index: 1
 
   &__img-block
     &_one
       @include section-bg("transparent", "../img/mission-one.jpg")
       grid-column: 6/ -1
+      grid-row: 1/2
+    &_two
+      @include section-bg("transparent", "../img/mission-two.jpg")
+      grid-column: 1/8
+      grid-row: 2/3
+    &_three
+      @include section-bg("transparent", "../img/mission-three.jpg")
+      grid-column: 6/ -1
+      grid-row: 3/4
