@@ -1,0 +1,59 @@
+.mobile-menu
+  display: none
+  opacity: 0
+  &_visible
+    display: block
+    opacity: 1
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: rgba(0,143,223,0.39)
+    z-index: 100
+  &__content
+    position: fixed
+    top: 50%
+    left: 50%
+    width: 280px
+    max-height: 100%
+    transform: translate(-50%, -50%)
+    padding: 52px 35px 46px 0
+    background-color: #ffff
+    color: #000
+    font-size: 18px
+    line-height: auto
+    z-index: 101
+    border-radius: 3px
+  &__close-btn
+    @include no-btn
+    width: 16px
+    position: absolute
+    left: 16px
+    top: 16px
+  &__list
+    list-style: none
+    margin-bottom: 16px
+  &__item
+    height: 46px
+    padding: 8px 8px 8px 16px
+    &:not(:last-child)
+      border-bottom: 1px solid #E7E7E7
+  &__phone-link
+    display: block
+    width: 215px
+    margin: 0 auto 40px auto
+    padding-left: 34px
+    font-size: 22px
+    line-height: 26px
+    @include section-bg("transparent", "../img/icons/call-calling.svg", "no-repeat", "left center", "24px 24px" )
+
+  &__social-group
+    padding-left: 16px
+    @include social-group
+    width: 100%
+    .social-group__link
+      @include social-links('#000')
+      @include links
+      font-size: 16px

@@ -1,0 +1,63 @@
+@media screen and (max-width: 1024px)
+  .container
+    max-width: 950px
+
+  .nav
+    &__logo
+      width: 229px
+      height: 47px
+
+  .header
+    &__title
+      font-size: 52px
+      line-height: 74px
+      &__subtitle
+        font-size: 20px
+        line-height: 24px
+      &__nav
+        margin-bottom: 120px
+
+  .lunchmenu
+    &__wrapper
+      min-height: auto
+    &__img-group
+      width: 47%
+
+  .img-group
+    &__photo
+      width: 215px
+      height: 320px
+
+  .mission
+    &__wrapper
+      grid-template-columns: repeat(8, 1fr)
+    &__text-block
+      &_one
+        grid-column: 1/ 5
+      &_two
+        grid-column: 5/ -1
+      &_three
+        grid-column: 1/ 5
+    &__img-block
+      &_one
+        grid-column: 5/ -1
+      &_two
+        grid-column: 1/5
+      &_three
+        grid-column: 5/ -1
+
+  .contacts
+    &__form
+      width: 50%
+    &__info
+      width: 45%
+
+  .contacts__title, .gallery__title
+    font-size: 42px
+    line-height: 68px
+
+  .form-contact
+    &__input-group
+      flex-direction: column
+    &__input
+      width: 100%

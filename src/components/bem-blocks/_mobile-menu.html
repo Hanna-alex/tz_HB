@@ -1,0 +1,35 @@
+<button class="nav__mobile-menu-btn">
+  <img src="img/icons/menu.svg" alt="menu-btn" />
+</button>
+<div class="@@class mobile-menu">
+  <div class="mobile-menu__overlay">
+    <div class="mobile-menu__content">
+      <button class="mobile-menu__close-btn">
+        <img src="img/icons/close.svg" alt="close button" />
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link"> À la carte</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Wijnkaart</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Lunchmenu</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Contact</a>
+        </li>
+      </ul>
+      <a href="tel:+3292825725" class="mobile-menu__phone-link"
+        >+32 9 282 57 25</a
+      >
+
+      @@include('../bem-blocks/_social-group.html', { class:
+      "mobile-menu__social-group", })
+    </div>
+    <!-- /.mobile-menu__content -->
+  </div>
+  <!-- /.mobile-menu__overlay -->
+</div>
+<!-- /.mobile__menu -->

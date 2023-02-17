@@ -42,6 +42,60 @@
     </li>
   </ul>
   <a href="tel:+3292825725" class="nav__link">+32 9 282 57 25</a>
+
+  <button class="nav__mobile-menu-btn">
+  <img src="img/icons/menu.svg" alt="menu-btn" />
+</button>
+<div class="nav__mobile-menu  mobile-menu">
+  <div class="mobile-menu__overlay">
+    <div class="mobile-menu__content">
+      <button class="mobile-menu__close-btn">
+        <img src="img/icons/close.svg" alt="close button" />
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link"> À la carte</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Wijnkaart</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Lunchmenu</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile__link">Contact</a>
+        </li>
+      </ul>
+      <a href="tel:+3292825725" class="mobile-menu__phone-link"
+        >+32 9 282 57 25</a
+      >
+
+      <div class="mobile-menu__social-group social-group">
+  <a
+    href="https://ru-ru.facebook.com/"
+    target="_blank"
+    class="social-group__link"
+    >Fb</a
+  ><a
+    href="https://www.instagram.com/"
+    target="_blank"
+    class="social-group__link"
+    >Ig</a
+  ><a href="https://twitter.com/" target="_blank" class="social-group__link"
+    >Tw</a
+  ><a href="https://www.youtube.com/" target="_blank" class="social-group__link"
+    >Yt</a
+  >
+</div>
+<!-- /.action-group__social-group -->
+
+    </div>
+    <!-- /.mobile-menu__content -->
+  </div>
+  <!-- /.mobile-menu__overlay -->
+</div>
+<!-- /.mobile__menu -->
+
 </nav>
 
       <div class="header__headlines">
@@ -360,7 +414,7 @@
       <section class="contacts">
         <div class="container">
           <div class="contacts__wrapper">
-            <div class="contacrts__info info">
+            <div class="contacts__info info">
               <h2 class="contacts__title">Contacts</h2>
               <div class="info__wrapper">
                 <div class="info__icon">
@@ -481,12 +535,12 @@
           <div class="contacts__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126431.90323553688!2d112.6143376!3d-7.9992474!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628248f8ca4fb%3A0xdc5c7201ac769e4f!2zSmwuIFJheWEgU3VyYWJheWEgLSBNYWxhbmcgTm8uMjc4NywgS2xvamVuLCBLZWMuIEtsb2plbiwgS290YSBNYWxhbmcsIEphd2EgVGltdXIgNjUxMTksINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2skg!4v1676267915659!5m2!1sru!2skg"
-              width="1170"
               height="547"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              class="contacts__google-map"
             ></iframe>
           </div>
           <!-- /.contacts__map -->
