@@ -13,8 +13,10 @@
     margin: 0 0 0 auto
     @include section-bg("transparent", "../img/icons/call-calling.svg", "no-repeat", "left center", "24px 24px" )
     @include links
+    transition: all 0.3s
+
     &:hover
-      transition: 0.3s
+      transition: all 0.3s
       color: #D3B47F
   &__mobile-menu
     position: absolute
@@ -25,7 +27,7 @@
   &__mobile-menu-btn
     @include no-btn
     display: none
-    transition: 0.3s
+    transition: all 0.3s
 
 .menu
   display: flex
@@ -34,6 +36,7 @@
   width: 450px
   &__link
     @include links
+    transition: all 0.3s
     &:hover
-      transition: 0.3s
+      transition: all 0.3s
       color: #D3B47F

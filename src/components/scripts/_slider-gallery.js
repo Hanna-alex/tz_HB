@@ -16,5 +16,15 @@ let gallerySwiper = new Swiper('.gallery__swiper', {
 
   speed: 600,
 
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+    },
+    767: {
+      spaceBetween: 30,
+    },
+
+  },
+
 
 });
